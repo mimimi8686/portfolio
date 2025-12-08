@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="アプリ開発・WEB制作者のポートフォリオサイト">
+  <title>Portfolio | App Developer & Web Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Portfolio</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="メニュー">
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#works" class="nav-link">Works</a></li>
+        <li><a href="#career" class="nav-link">Career</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-subtitle">App Developer & Web Creator</p>
+      <h1 class="hero-title">
+        <span class="hero-name">Your Name</span>
+        <span class="hero-jp">ユアネーム</span>
+      </h1>
+      <p class="hero-description">
+        丁寧なコードで、<br class="sp-only">価値あるプロダクトを。
+      </p>
+      <a href="#works" class="hero-cta">View Works</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="about-image-placeholder">
+            <span>Photo</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3 class="about-heading">
+            ものづくりへの情熱を、<br>
+            エンジニアリングに。
+          </h3>
+          <p class="about-description">
+            30代でエンジニアへのキャリアチェンジを決意しました。
+            前職での経験を活かしながら、アプリ開発・WEB制作の技術を習得。
+            ユーザー視点を大切にした、丁寧なプロダクト開発を心がけています。
+          </p>
+          <p class="about-description">
+            「使いやすさ」と「美しさ」を両立させたプロダクトを作ることが目標です。
+            新しい技術への学習意欲と、前職で培った課題解決能力を武器に、
+            即戦力として貢献できるエンジニアを目指しています。
+          </p>
+          <div class="about-info">
+            <div class="about-info-item">
+              <span class="about-info-label">Name</span>
+              <span class="about-info-value">Your Name</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Location</span>
+              <span class="about-info-value">Tokyo, Japan</span>
+            </div>
+            <div class="about-info-item">
+              <span class="about-info-label">Interest</span>
+              <span class="about-info-value">UI/UX Design, Mobile App</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-content">
+        <div class="skills-category">
+          <h3 class="skills-category-title">Web Development</h3>
+          <ul class="skills-list">
+            <li class="skill-item">
+              <span class="skill-name">HTML / CSS</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-name">WordPress（テーマ構築）</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-name">PHP</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-name">STUDIO</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+            </li>
+          </ul>
+        </div>
+        <div class="skills-category">
+          <h3 class="skills-category-title">App Development & Design</h3>
+          <ul class="skills-list">
+            <li class="skill-item">
+              <span class="skill-name">Swift / SwiftUI</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-name">iOS App Development</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-name">Figma</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-name">UI / UX Design</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-name">Git / GitHub</span>
+              <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works Section -->
+  <section class="section works" id="works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Works</h2>
+      </div>
+      <div class="works-grid">
+        <!-- Work Item 1 -->
+        <article class="work-card">
+          <a href="work-hope.html" class="work-card-link">
+          <div class="work-image">
+            <div class="work-image-placeholder">
+              <span>未来学園HOPE</span>
+            </div>
+            <div class="work-overlay">
+              <span class="work-link">詳細を見る</span>
+            </div>
+          </div>
+          <div class="work-content">
+            <span class="work-category">Corporate Website</span>
+            <h3 class="work-title">未来学園HOPE WEBサイト</h3>
+            <p class="work-description">
+              教育機関のコーポレートサイト。WordPressオリジナルテーマを
+              ゼロから設計・開発。レスポンシブ対応、SEO最適化を実施。
+            </p>
+            <ul class="work-tech">
+              <li>WordPress</li>
+              <li>PHP</li>
+              <li>オリジナルテーマ</li>
+            </ul>
+          </div>
+          </a>
+        </article>
+
+        <!-- Work Item 2 -->
+        <article class="work-card">
+          <a href="work-freeschool.html" class="work-card-link">
+          <div class="work-image">
+            <div class="work-image-placeholder">
+              <span>フリースクール</span>
+            </div>
+            <div class="work-overlay">
+              <span class="work-link">詳細を見る</span>
+            </div>
+          </div>
+          <div class="work-content">
+            <span class="work-category">Website (NoCode)</span>
+            <h3 class="work-title">未来学園HOPE フリースクール</h3>
+            <p class="work-description">
+              フリースクールの紹介サイト。STUDIOを使用し、
+              ノーコードでスピーディーに構築。更新性の高い設計を実現。
+            </p>
+            <ul class="work-tech">
+              <li>STUDIO</li>
+              <li>NoCode</li>
+              <li>デザイン</li>
+            </ul>
+          </div>
+          </a>
+        </article>
+
+        <!-- Work Item 3 -->
+        <article class="work-card">
+          <a href="work-roulette.html" class="work-card-link">
+          <div class="work-image">
+            <div class="work-image-placeholder">
+              <span>抽選ルーレット</span>
+            </div>
+            <div class="work-overlay">
+              <span class="work-link">詳細を見る</span>
+            </div>
+          </div>
+          <div class="work-content">
+            <span class="work-category">iOS Application</span>
+            <h3 class="work-title">まとめて抽選ルーレット</h3>
+            <p class="work-description">
+              イベントや飲み会で使える抽選アプリ。複数当選者の設定、
+              CSVインポート、結果のシェア機能など多彩な機能を搭載。
+            </p>
+            <ul class="work-tech">
+              <li>Swift</li>
+              <li>SwiftUI</li>
+              <li>iOS</li>
+            </ul>
+          </div>
+          </a>
+        </article>
+
+        <!-- Work Item 4 -->
+        <article class="work-card">
+          <a href="work-reading.html" class="work-card-link">
+          <div class="work-image">
+            <div class="work-image-placeholder">
+              <span>読書通帳</span>
+            </div>
+            <div class="work-overlay">
+              <span class="work-coming-soon">Coming Soon</span>
+            </div>
+          </div>
+          <div class="work-content">
+            <span class="work-category">iOS Application</span>
+            <h3 class="work-title">読書通帳</h3>
+            <p class="work-description">
+              読んだ本を記録・管理できるiOSアプリ。
+              読書履歴の可視化で、読書習慣をサポート。
+            </p>
+            <ul class="work-tech">
+              <li>Swift</li>
+              <li>SwiftUI</li>
+              <li>Cursor</li>
+            </ul>
+          </div>
+          </a>
+        </article>
+
+        <!-- Work Item 5 -->
+        <article class="work-card">
+          <a href="work-today.html" class="work-card-link">
+          <div class="work-image">
+            <div class="work-image-placeholder">
+              <span>今日なにする？</span>
+            </div>
+            <div class="work-overlay">
+              <span class="work-coming-soon">Coming Soon</span>
+            </div>
+          </div>
+          <div class="work-content">
+            <span class="work-category">Web & iOS Application</span>
+            <h3 class="work-title">今日なにする？</h3>
+            <p class="work-description">
+              やることに迷った時に提案してくれるアプリ。
+              WEB版とiOS版の両方を開発し、マルチプラットフォーム対応。
+            </p>
+            <ul class="work-tech">
+              <li>Swift</li>
+              <li>Web</li>
+              <li>ChatGPT</li>
+            </ul>
+          </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Section -->
+  <section class="section career" id="career">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Career</h2>
+      </div>
+      <div class="career-timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">
+            <span class="timeline-year">2024 - Present</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">個人開発・エンジニア転職活動</h3>
+            <p class="timeline-description">
+              iOSアプリ・WEBサイトの個人開発に注力。
+              App Storeでアプリをリリースし、実践的な開発経験を積む。
+              エンジニアとしてのキャリアをスタートするため転職活動中。
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">
+            <span class="timeline-year">2024</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">デジタルハリウッド 卒業</h3>
+            <p class="timeline-description">
+              Webデザイン・WordPressコースを修了。
+              Webデザインの基礎からWordPressテーマ構築まで体系的に学習。
+              実案件を想定した制作課題で実践力を養う。
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">
+            <span class="timeline-year">〜 2024</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">会社員</h3>
+            <p class="timeline-description">
+              社会人として様々な業務を経験。
+              顧客対応、プロジェクト管理、チームでの協働を通じて
+              コミュニケーション能力と課題解決力を培う。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">05</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-content">
+        <p class="contact-description">
+          お仕事のご依頼・ご相談など、<br>
+          お気軽にお問い合わせください。
+        </p>
+        <a href="mailto:raimyu.app@gmail.com" class="contact-email">
+          raimyu.app@gmail.com
+        </a>
+        <div class="contact-links">
+          <a href="https://x.com/rai_fmyu" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            <span>X</span>
+          </a>
+          <a href="https://note.com/raimyu_app" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M22.8 6.6c-.3-.5-.8-.9-1.4-1.1L13.1 2.2c-.7-.3-1.5-.3-2.2 0L2.6 5.5c-.6.2-1.1.6-1.4 1.1-.3.5-.4 1.1-.2 1.7l3.3 13.2c.2.6.6 1.1 1.1 1.4.5.3 1.1.4 1.7.2l8.3-3.3c.7-.3 1.2-.8 1.5-1.5l3.3-8.3c.5-1.2 0-2.5-1.2-3zm-9.9 11.2l-5.5 2.2-2.2-8.8 5.5-2.2 2.2 8.8zm6.6-6.6l-2.2 5.5-2.2-8.8 5.5-2.2-1.1 5.5z"/>
+            </svg>
+            <span>note</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2024 raimyu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

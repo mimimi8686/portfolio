@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Templates (開発用なのでデプロイ不要)
+_template-*.html
+

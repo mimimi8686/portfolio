@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="まとめて抽選ルーレット - iOSアプリ開発の詳細">
+  <title>まとめて抽選ルーレット | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Portfolio</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html#works" class="nav-link">← Works に戻る</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Work Detail Header -->
+  <section class="work-detail-hero">
+    <div class="container">
+      <span class="work-detail-category">iOS Application</span>
+      <h1 class="work-detail-title">まとめて抽選ルーレット</h1>
+      <p class="work-detail-subtitle">イベントや飲み会で使える、楽しい抽選アプリ</p>
+      <div class="work-detail-links">
+        <a href="https://apps.apple.com/jp/app/%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E6%8A%BD%E9%81%B8%E3%83%AB%E3%83%BC%E3%83%AC%E3%83%83%E3%83%88/id6752506572" class="work-detail-btn primary" target="_blank" rel="noopener">
+          App Store で見る
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Detail Content -->
+  <section class="work-detail-content">
+    <div class="container">
+      
+      <!-- Overview -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">Overview</h2>
+        <p class="work-detail-text">
+          「まとめて抽選ルーレット」は、イベントや飲み会、プレゼント企画などで
+          公平に当選者を決められる抽選アプリです。シンプルな操作性と楽しい演出で、
+          場を盛り上げながら抽選を行えます。
+        </p>
+        <div class="work-detail-image">
+          <div class="work-detail-image-placeholder">
+            <span>App Screenshot</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">開発の背景・動機</h2>
+        <p class="work-detail-text">
+          既存の抽選アプリを使った際に、「複数人を一度に抽選したい」「参加者リストを
+          簡単にインポートしたい」というニーズがあることに気づきました。
+          また、抽選という行為自体を楽しいイベントにしたいという思いから、
+          UIにもこだわったアプリを開発することにしました。
+        </p>
+      </div>
+
+      <!-- Features -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">主な機能</h2>
+        <ul class="work-detail-features">
+          <li>
+            <span class="feature-icon">🎯</span>
+            <div class="feature-content">
+              <h3>複数当選者の設定</h3>
+              <p>1名から複数名まで、当選人数を自由に設定可能</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-icon">📋</span>
+            <div class="feature-content">
+              <h3>CSVインポート・貼り付け</h3>
+              <p>大量の参加者リストも簡単に入力できる</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-icon">🚫</span>
+            <div class="feature-content">
+              <h3>除外機能</h3>
+              <p>過去の当選者や特定の人を除外して抽選</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-icon">📤</span>
+            <div class="feature-content">
+              <h3>結果のシェア</h3>
+              <p>当選結果を画像として保存・SNSで共有</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Technical Challenges -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">技術的な挑戦と解決</h2>
+        
+        <div class="work-detail-challenge">
+          <h3>課題：ルーレットの針と当選者の不一致</h3>
+          <p class="work-detail-text">
+            リリース後、ユーザーレビューで「ルーレットが止まった位置と当選者名が
+            異なる」というフィードバックをいただきました。抽選の透明性に関わる
+            重要な問題でした。
+          </p>
+          <div class="work-detail-solution">
+            <h4>解決策</h4>
+            <p>
+              当選結果モーダル表示中に背面を長押しすると、実際のルーレット結果を
+              確認できる機能を実装。ユーザーが抽選の公平性を自ら確認できるように
+              改善しました。
+            </p>
+          </div>
+        </div>
+
+        <div class="work-detail-challenge">
+          <h3>課題：大量参加者への対応</h3>
+          <p class="work-detail-text">
+            イベントによっては参加者が数十人〜数百人になることも。
+            手入力では現実的ではありません。
+          </p>
+          <div class="work-detail-solution">
+            <h4>解決策</h4>
+            <p>
+              テキストの貼り付けとCSVインポート機能を実装。
+              Excelやスプレッドシートからのデータ移行をスムーズに行えるようにしました。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Design -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">デザインのこだわり</h2>
+        <p class="work-detail-text">
+          「抽選」という行為を楽しいイベントにするため、かわいいパステルカラーの
+          デザインを採用しました。飲み会やイベントで使う際に、場の雰囲気を
+          明るくする効果を狙っています。
+        </p>
+        <p class="work-detail-text">
+          また、ルーレットの回転アニメーションにもこだわり、ワクワク感を
+          演出しています。
+        </p>
+      </div>
+
+      <!-- Tech Stack -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">使用技術</h2>
+        <div class="work-detail-tech">
+          <div class="tech-item">
+            <span class="tech-label">言語</span>
+            <span class="tech-value">Swift</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">フレームワーク</span>
+            <span class="tech-value">SwiftUI</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">プラットフォーム</span>
+            <span class="tech-value">iOS / iPadOS</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">アニメーション</span>
+            <span class="tech-value">SwiftUI Animation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learnings -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">学んだこと・今後の展望</h2>
+        <p class="work-detail-text">
+          このプロジェクトを通じて、ユーザーフィードバックの重要性を実感しました。
+          リリース後のレビューに真摯に向き合い、迅速にアップデートすることで
+          ユーザー満足度を向上させることができました。
+        </p>
+        <p class="work-detail-text">
+          今後は、グループ機能の追加や、より多彩な演出エフェクトの実装を
+          検討しています。
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="work-detail-nav">
+        <a href="index.html#works" class="work-detail-back">← Works 一覧に戻る</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2024 raimyu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

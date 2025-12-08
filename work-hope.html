@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="未来学園HOPE WEBサイト - WordPress開発の詳細">
+  <title>未来学園HOPE WEBサイト | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Portfolio</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html#works" class="nav-link">← Works に戻る</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Work Detail Header -->
+  <section class="work-detail-hero">
+    <div class="container">
+      <span class="work-detail-category">Corporate Website</span>
+      <h1 class="work-detail-title">未来学園HOPE WEBサイト</h1>
+      <p class="work-detail-subtitle">WordPressオリジナルテーマによるコーポレートサイト</p>
+      <div class="work-detail-links">
+        <a href="https://miraigakuenhope.com/" class="work-detail-btn primary" target="_blank" rel="noopener">
+          サイトを見る
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Detail Content -->
+  <section class="work-detail-content">
+    <div class="container">
+      
+      <!-- Overview -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">Overview</h2>
+        <p class="work-detail-text">
+          教育機関「未来学園HOPE」のコーポレートサイトです。
+          WordPressのオリジナルテーマをゼロから設計・開発し、
+          施設の魅力を伝えつつ、運営者が簡単に更新できるサイトを構築しました。
+        </p>
+        <div class="work-detail-image">
+          <div class="work-detail-image-placeholder">
+            <span>Website Screenshot</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">開発の背景・動機</h2>
+        <p class="work-detail-text">
+          クライアントから「自分たちで簡単に更新できるサイトが欲しい」という
+          要望をいただきました。既存のテーマでは細かいカスタマイズに限界があるため、
+          オリジナルテーマを開発することで、デザインの自由度と運用のしやすさを
+          両立させることにしました。
+        </p>
+      </div>
+
+      <!-- Features -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">実装した機能</h2>
+        <ul class="work-detail-features">
+          <li>
+            <span class="feature-icon">📝</span>
+            <div class="feature-content">
+              <h3>カスタム投稿タイプ</h3>
+              <p>お知らせ、イベント情報など目的別に投稿を管理</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-icon">📱</span>
+            <div class="feature-content">
+              <h3>レスポンシブデザイン</h3>
+              <p>PC・タブレット・スマートフォンに最適化</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-icon">🔍</span>
+            <div class="feature-content">
+              <h3>SEO対策</h3>
+              <p>メタタグ最適化、構造化データの実装</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-icon">⚡</span>
+            <div class="feature-content">
+              <h3>ページ速度最適化</h3>
+              <p>画像最適化、キャッシュ設定による高速化</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Technical Challenges -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">技術的な挑戦と解決</h2>
+        
+        <div class="work-detail-challenge">
+          <h3>課題：運用者が使いやすい管理画面</h3>
+          <p class="work-detail-text">
+            WordPress初心者でも迷わず更新できる管理画面が求められました。
+          </p>
+          <div class="work-detail-solution">
+            <h4>解決策</h4>
+            <p>
+              カスタムフィールド（ACF）を活用し、必要な項目だけを
+              わかりやすく入力できるフォームを作成。
+              マニュアルなしでも直感的に操作できる管理画面を実現しました。
+            </p>
+          </div>
+        </div>
+
+        <div class="work-detail-challenge">
+          <h3>課題：デザインの再現性</h3>
+          <p class="work-detail-text">
+            デザインカンプ通りの見た目を、様々なデバイスで崩れなく表示する
+            必要がありました。
+          </p>
+          <div class="work-detail-solution">
+            <h4>解決策</h4>
+            <p>
+              CSS設計にBEM命名規則を採用し、コンポーネント単位で管理。
+              Flexbox/Gridを活用したモダンなレイアウトで、
+              保守性の高いコードを実現しました。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stack -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">使用技術</h2>
+        <div class="work-detail-tech">
+          <div class="tech-item">
+            <span class="tech-label">CMS</span>
+            <span class="tech-value">WordPress</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">言語</span>
+            <span class="tech-value">PHP / HTML / CSS / JavaScript</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">プラグイン</span>
+            <span class="tech-value">ACF, Yoast SEO</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">開発期間</span>
+            <span class="tech-value">約2ヶ月</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learnings -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">学んだこと</h2>
+        <p class="work-detail-text">
+          このプロジェクトを通じて、「作って終わり」ではなく「運用を見据えた設計」の
+          重要性を学びました。クライアントとのコミュニケーションを重ね、
+          本当に必要な機能を見極めることの大切さを実感しました。
+        </p>
+        <p class="work-detail-text">
+          また、WordPressのテーマ開発を通じて、PHPの理解が深まり、
+          サーバーサイドの仕組みについても学ぶことができました。
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="work-detail-nav">
+        <a href="index.html#works" class="work-detail-back">← Works 一覧に戻る</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2024 raimyu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
