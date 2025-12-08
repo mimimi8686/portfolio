@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="今日なにする？ - WEB・iOSアプリ開発の詳細">
+  <title>今日なにする？ | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Portfolio</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html#works" class="nav-link">← Works に戻る</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Work Detail Header -->
+  <section class="work-detail-hero">
+    <div class="container">
+      <span class="work-detail-category">Web & Mobile Application</span>
+      <h1 class="work-detail-title">今日なにする？</h1>
+      <p class="work-detail-subtitle">やることに迷った時に提案してくれるアプリ</p>
+      <div class="work-detail-links">
+        <span class="work-detail-btn secondary">Coming Soon</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Detail Content -->
+  <section class="work-detail-content">
+    <div class="container">
+      
+      <!-- Overview -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">Overview</h2>
+        <p class="work-detail-text">
+          「今日なにする？」は、休日や空き時間に「何をしようか迷う」という
+          日常的な悩みを解決するアプリです。ユーザーの気分や状況に合わせて、
+          やることを提案します。
+        </p>
+        <div class="work-detail-image">
+          <div class="work-detail-image-placeholder">
+            <span>App Screenshot（開発中）</span>
+          </div>
+        </div>
+        <p class="work-detail-text" style="text-align: center; color: var(--color-accent); font-weight: 500;">
+          ※ 現在開発中
+        </p>
+      </div>
+
+      <!-- Background -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">開発の背景・動機</h2>
+        <p class="work-detail-text">
+          せっかくの休日なのに「何しよう…」とスマホをダラダラ見て終わってしまう。
+          そんな経験は誰にでもあるはず。
+        </p>
+        <p class="work-detail-text">
+          「決断疲れ」を解消し、気軽に新しいことにチャレンジするきっかけを
+          提供できるアプリを作りたいと考えました。
+        </p>
+      </div>
+
+      <!-- Features -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">予定している機能</h2>
+        <ul class="work-detail-features">
+          <li>
+            <span class="feature-icon">🎲</span>
+            <div class="feature-content">
+              <h3>ランダム提案</h3>
+              <p>ボタン一つで今日やることをランダムに提案</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-icon">😊</span>
+            <div class="feature-content">
+              <h3>気分に合わせた提案</h3>
+              <p>「アクティブ」「まったり」など気分を選んで提案を絞り込み</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-icon">📝</span>
+            <div class="feature-content">
+              <h3>カスタムリスト</h3>
+              <p>自分だけの「やりたいことリスト」を登録</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-icon">📱</span>
+            <div class="feature-content">
+              <h3>マルチプラットフォーム</h3>
+              <p>WEB版とアプリ版を提供、どこからでもアクセス可能</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Development Approach -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">開発アプローチ</h2>
+        
+        <div class="work-detail-challenge">
+          <h3>AIアシスタント（ChatGPT）を活用した開発</h3>
+          <p class="work-detail-text">
+            このプロジェクトでは、ChatGPTに質問しながら実装を進めています。
+            わからない部分を質問し、返ってきたコードを理解・検証しながら
+            開発を進めるスタイルです。
+          </p>
+          <div class="work-detail-solution">
+            <h4>私が担当していること</h4>
+            <p>
+              ・アプリの企画・設計（何を作るか、どんなUIにするか）<br>
+              ・AIの回答を理解し、正しく動くか検証<br>
+              ・エラーが出た時のデバッグと問題解決<br>
+              ・UIの調整やユーザー体験の改善
+            </p>
+          </div>
+        </div>
+
+        <div class="work-detail-challenge">
+          <h3>マルチプラットフォーム開発への挑戦</h3>
+          <p class="work-detail-text">
+            React Native / Expo を使用することで、
+            一つのコードベースからiOS・Android両方に対応するアプリを開発しています。
+          </p>
+        </div>
+      </div>
+
+      <!-- Tech Stack -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">使用技術</h2>
+        <div class="work-detail-tech">
+          <div class="tech-item">
+            <span class="tech-label">フレームワーク</span>
+            <span class="tech-value">React Native / Expo</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">言語</span>
+            <span class="tech-value">TypeScript</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">開発支援</span>
+            <span class="tech-value">ChatGPT</span>
+          </div>
+          <div class="tech-item">
+            <span class="tech-label">デザイン</span>
+            <span class="tech-value">Figma</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learnings -->
+      <div class="work-detail-section">
+        <h2 class="work-detail-heading">学んでいること</h2>
+        <p class="work-detail-text">
+          このプロジェクトを通じて、React Native / Expoでの
+          クロスプラットフォーム開発について学んでいます。
+        </p>
+        <p class="work-detail-text">
+          また、AIに質問する際の「良い質問の仕方」を学ぶことで、
+          より効率的に問題解決できるようになりました。
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="work-detail-nav">
+        <a href="index.html#works" class="work-detail-back">← Works 一覧に戻る</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2024 raimyu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
