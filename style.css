@@ -448,6 +448,14 @@ button {
   font-weight: 500;
 }
 
+.about-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
 .about-heading {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   font-weight: 600;
