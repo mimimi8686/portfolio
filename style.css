@@ -452,6 +452,7 @@ button {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
+  object-position: top;
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
 }
@@ -1058,6 +1059,9 @@ button {
 .work-detail-image img,
 .work-detail-img {
   width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
 }
