@@ -631,6 +631,7 @@ button {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+  object-position: top;
 }
 
 .work-overlay {
